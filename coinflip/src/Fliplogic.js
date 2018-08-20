@@ -9,26 +9,20 @@ class Fliplogic extends Component {
             return Math.random() < 0.5 ? 'heads' : 'tails';
           }
         if (coinToss()=== 'heads') {
-        //   document.getElementById('result').innerHTML = "HEADS!";
-        console.log("heads");
+        document.getElementById('result').innerHTML = "HEADS!";
         } else {
-        //   document.getElementById('result').innerHTML = "TAILS!";
-        console.log("tails");
+        document.getElementById('result').innerHTML = "TAILS!";
         }
       };
 
     render() {
         return(
             <div>
-                <div className="coincontainer" id="flipper">
-                <h1 className="coin" id="result">Heads-or-Tails</h1>
-                </div>
                 <h3>can't make a decision? <br /> flip a coin!</h3>
                 <div className="btnbox">
-                <button 
-                    onClick={this.btnHandler()} 
-                    type="button" 
-                    className="btn">FLIP</button>
+                    <button 
+                        onClick={this.btnHandler} 
+                        className="btn">FLIP</button>
                 </div>
             </div>
         );

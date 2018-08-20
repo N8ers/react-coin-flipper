@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Fliplogic from './Fliplogic';
 
@@ -9,6 +9,13 @@ class App extends Component {
         <div>
 
           <h1 className="head">FLIP. THAT. COIN.</h1>
+
+          <div className="coincontainer" 
+            id="flipper">
+              <h3 className="coin" 
+                id="result">Heads-or-Tails
+              </h3>
+          </div>
 
           <Fliplogic />
 
