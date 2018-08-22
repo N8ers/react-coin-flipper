@@ -4,7 +4,7 @@
 }
 
 body {
- background: linear-gradient(to right, #ef32d9, #89fffd);
+  background: linear-gradient(to right, #ef32d9, #89fffd);
   border: 3px solid black;
   max-width: 50%;
   margin: 10vh 25%;
@@ -27,15 +27,19 @@ h3 {
   margin: 20px auto;
 }
 
-#flipper {
-  
-}
-
 .coin {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+@keyframes flip {
+  0% {}
+  50% {
+        -webkit-transform: rotateY(720deg) translateY(-400px);
+  }
+  100% {}
 }
 
 .btnbox {

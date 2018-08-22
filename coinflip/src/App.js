@@ -10,9 +10,11 @@ class App extends Component {
 
           <h1 className="head">FLIP. THAT. COIN.</h1>
 
-          <div className="coincontainer" 
+          <div 
+            className="coincontainer" 
             id="flipper">
-              <h3 className="coin" 
+              <h3 
+                className="coin" 
                 id="result">Heads-or-Tails
               </h3>
           </div>
